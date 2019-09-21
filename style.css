@@ -1,0 +1,78 @@
+@import 'https://fonts.googleapis.com/css?family=Big+Shoulders+Text';
+
+body { 
+  font-family: 'Big Shoulders Text', cursive;
+  background: url("https://images.pexels.com/photos/37728/pexels-photo-37728.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center center fixed; 
+  
+  background-size: cover;
+  padding-top: 5%;
+  text-align: center;
+  font-size: large;
+}
+
+#info {
+  margin: auto;
+  background-color: rgba(197, 194, 194, 0.8);
+  display: block;
+  border-radius: 5px;
+  height: 80%;
+  width: 80%;
+  
+  max-width: 500px;
+}
+
+#weatherInfo {
+  text-align: center;
+  border-top: 6px solid rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+#searchBox {
+  display: block;
+  background-color: white;
+  min-height: 50px;
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+  padding-left:10px;
+}
+
+button {
+  color: white;
+  display: block;
+  background: black;
+  border: 2px solid white;
+  float: right;
+  width: 30%;
+  min-height: 50px;
+}
+
+
+
+input {
+  display: block;
+  float: left;
+  background: transparent;
+  border-style: none;
+  min-height: 50px;
+  width: 69%;  
+}
+
+#cityAndTemp {
+  width : 50%;
+  float: left;
+  padding-right: 20px;
+  text-align: center;
+}
+
+#cityTitle {
+  text-align: center;
+}
+
+#fields {
+  width: 50%;
+  float: right;
+  padding: 20px;
+  text-align: left;
+}
+

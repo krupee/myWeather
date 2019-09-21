@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>myWeather</title>
+		<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="style.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
+        <script src="config.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+         <div ng-app = "app" ng-controller = "appController" id="info">
+            <header>
+                    <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand">myWeather</a>
+                        </div>
+        
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><i class="fa fa-home"></i>Krupal Patel</li>
+                        </ul>
+                    </div>
+                    </nav>
+
+                </header>
+		
+			<div id="weatherInfo">
+				<div id="cityAndTemp">
+                    <div id="cityTitle">
+                    </div>
+                    <p> <h2><strong>{{city}}</strong></h2></p>
+                    <p><h2> {{temp}} <strong>&#8457;</strong></h2></p>
+                    <img ng-src="{{visual}}">
+                    <p><i class="fa fa-flag-o" aria-hidden="true"></i>{{code}}</p>
+				</div>
+				<div id="fields">
+            
+                    
+                    
+                    <p>Description: {{description}}</p>
+                    <br>
+                    <p>Humidity: {{hum}} %</p>
+                    <p>Wind Speeds: {{wind}} mph</p>
+                    <p>Pressure: {{pressure}} </p>
+                    
+					
+				</div>
+			</div>
+			<div id="searchBox">
+				<input ng-model = "number" style="width: 60%; float:left" ng-value="message"/>	
+				<button ng-click = "square()" style="width: 35%; float:right">Enter City</button>
+            </div>
+            
+            <div id="warning">
+                <br>
+        
+                <p>Some locations will not display all the information listed!!!</p>
+                
+                <br>
+            </div>
+		</div>
+	</body>
+</html>
